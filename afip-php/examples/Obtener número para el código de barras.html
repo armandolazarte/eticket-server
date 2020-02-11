@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Obtener número para el código de barras &mdash; documentación de Afip SDK PRO - 0.1</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Cambiar nombre o ruta de archivo cert" href="Cambiar nombre o ruta de archivo cert.html" />
+    <link rel="prev" title="Obtener datos del padrón alcance 13" href="Obtener datos del padrón alcance 13.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5f4d93" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Ejemplos de uso</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Crear Factura A.html">Crear Factura A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear Factura B.html">Crear Factura B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear Factura C.html">Crear Factura C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear Factura de Crédito electrónica A.html">Crear Factura de Crédito electrónica A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear Factura de Crédito electrónica B.html">Crear Factura de Crédito electrónica B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear Factura de Crédito electrónica C.html">Crear Factura de Crédito electrónica C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener el número de ultima Factura A.html">Obtener el número de ultima Factura A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener el número de ultima Factura B.html">Obtener el número de ultima Factura B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener el número de ultima Factura C.html">Obtener el número de ultima Factura C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener información de Factura A ya emitida.html">Obtener información de Factura A ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener información de Factura B ya emitida.html">Obtener información de Factura B ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener información de Factura C ya emitida.html">Obtener información de Factura C ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear Nota de Crédito A.html">Crear Nota de Crédito A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear Nota de Crédito B.html">Crear Nota de Crédito B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear Nota de Crédito C.html">Crear Nota de Crédito C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener datos del padrón alcance 4.html">Obtener datos del padrón alcance 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener datos del padrón alcance 5.html">Obtener datos del padrón alcance 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener datos del padrón alcance 10.html">Obtener datos del padrón alcance 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener datos del padrón alcance 13.html">Obtener datos del padrón alcance 13</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Obtener número para el código de barras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cambiar nombre o ruta de archivo cert.html">Cambiar nombre o ruta de archivo cert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cambiar nombre o ruta de archivo key.html">Cambiar nombre o ruta de archivo key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cambiar carpeta donde se guardan los Token.html">Cambiar carpeta donde se guardan los Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Usar el SDK en modo producción.html">Usar el SDK en modo producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Declarar varios tipos de IVA.html">Declarar varios tipos de IVA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Implementación en Frameworks y Plataformas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/laravel.html">Implementación en Laravel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/symfony.html">Implementación en Symfony</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/codeigniter.html">Implementación en CodeIgniter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/cakephp.html">Implementación en CakePHP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/yii.html">Implementación en Yii</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/magento.html">Implementación en Magento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/wordpress.html">Implementación en WordPress</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutoriales para la página AFIP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/test-certificate.html">Obtener certificado de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/test-authorization.html">Autorizar a un web service de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/test-add-administration.html">Habilitar administrador de certificados de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/production-certificate.html">Obtener certificado de producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/production-authorization.html">Autorizar a un web service de producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/production-add-administration.html">Habilitar administrador de certificados de producción</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../errors.html">Solución a errores más frecuentes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Preguntas frecuentes</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Afip SDK PRO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Ejemplos de uso</a> &raquo;</li>
+        
+      <li>Obtener número para el código de barras</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="obtener-numero-para-el-codigo-de-barras">
+<h1>Obtener número para el código de barras<a class="headerlink" href="#obtener-numero-para-el-codigo-de-barras" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+
+<span class="sd">/**</span>
+<span class="sd"> * CUIT de la persona/empresa emitio la factura (11 caracteres)</span>
+<span class="sd"> **/</span>
+<span class="nv">$cuit</span> <span class="o">=</span> <span class="s1">&#39;11111111111&#39;</span><span class="p">;</span>
+
+<span class="sd">/**</span>
+<span class="sd"> * Tipo de comprobante (2 caracteres, completado con 0&#39;s)</span>
+<span class="sd"> **/</span>
+<span class="nv">$tipo_de_comprobante</span> <span class="o">=</span> <span class="s1">&#39;06&#39;</span><span class="p">;</span>
+
+<span class="sd">/**</span>
+<span class="sd"> * Punto de venta (4 caracteres, completado con 0&#39;s)</span>
+<span class="sd"> **/</span>
+<span class="nv">$punto_de_venta</span> <span class="o">=</span> <span class="s1">&#39;0001&#39;</span><span class="p">;</span>
+
+<span class="sd">/**</span>
+<span class="sd"> * CAE (14 caracteres)</span>
+<span class="sd"> **/</span>
+<span class="nv">$cae</span> <span class="o">=</span> <span class="s1">&#39;12345678912345&#39;</span><span class="p">;</span>
+
+<span class="sd">/**</span>
+<span class="sd"> * Fecha de expiracion del CAE (8 caracteres, formato aaaammdd)</span>
+<span class="sd"> **/</span>
+<span class="nv">$vencimiento_cae</span> <span class="o">=</span> <span class="s1">&#39;20191210&#39;</span><span class="p">;</span>
+
+
+<span class="nv">$barcode</span> <span class="o">=</span> <span class="nv">$cuit</span><span class="o">.</span><span class="nv">$tipo_de_comprobante</span><span class="o">.</span><span class="nv">$punto_de_venta</span><span class="o">.</span><span class="nv">$cae</span><span class="o">.</span><span class="nv">$vencimiento_cae</span><span class="p">;</span>
+<span class="nv">$barcode</span> <span class="o">.=</span> <span class="nx">GetChecksumChar</span><span class="p">(</span><span class="nv">$barcode</span><span class="p">);</span>
+
+
+<span class="sd">/**</span>
+<span class="sd"> * Mostramos por pantalla el numero del codigo de barras de 40 caracteres</span>
+<span class="sd"> **/</span>
+<span class="nb">var_dump</span><span class="p">(</span><span class="nv">$barcode</span><span class="p">);</span>
+
+
+
+<span class="sd">/**</span>
+<span class="sd"> * Funcion para obtener el ultimo numero del codigo</span>
+<span class="sd"> * </span>
+<span class="sd"> * @param {string} $code Codigo de 39 caracteres</span>
+<span class="sd"> **/</span>
+<span class="k">function</span> <span class="nf">GetChecksumChar</span><span class="p">(</span><span class="nv">$code</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">//Step one</span>
+	<span class="nv">$number_odd</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$code</span><span class="p">);</span> <span class="nv">$i</span><span class="o">+=</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span> 
+		<span class="nv">$number_odd</span> <span class="o">+=</span> <span class="nv">$code</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+	<span class="p">}</span>
+
+	<span class="c1">//Step two</span>
+	<span class="nv">$number_odd</span> <span class="o">*=</span> <span class="mi">3</span><span class="p">;</span>
+
+	<span class="c1">//Step three</span>
+	<span class="nv">$number_even</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+	<span class="k">for</span> <span class="p">(</span><span class="nv">$i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">&lt;</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$code</span><span class="p">);</span> <span class="nv">$i</span><span class="o">+=</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span> 
+		<span class="nv">$number_even</span> <span class="o">+=</span> <span class="nv">$code</span><span class="p">[</span><span class="nv">$i</span><span class="p">];</span>
+	<span class="p">}</span>
+
+	<span class="c1">//Step four</span>
+	<span class="nv">$sum</span> <span class="o">=</span> <span class="nv">$number_odd</span><span class="o">+</span><span class="nv">$number_even</span><span class="p">;</span>
+
+	<span class="c1">//Step five</span>
+	<span class="nv">$checksum_char</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="p">(</span><span class="nv">$sum</span> <span class="o">%</span> <span class="mi">10</span><span class="p">);</span>
+
+	<span class="k">return</span> <span class="nv">$checksum_char</span> <span class="o">==</span> <span class="mi">10</span> <span class="o">?</span> <span class="mi">0</span> <span class="o">:</span> <span class="nv">$checksum_char</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Cambiar nombre o ruta de archivo cert.html" class="btn btn-neutral float-right" title="Cambiar nombre o ruta de archivo cert" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Obtener datos del padrón alcance 13.html" class="btn btn-neutral float-left" title="Obtener datos del padrón alcance 13" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Afip SDK
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

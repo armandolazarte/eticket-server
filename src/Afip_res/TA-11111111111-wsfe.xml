@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loginTicketResponse version="1.0">
+    <header>
+        <source>CN=wsaahomo, O=AFIP, C=AR, SERIALNUMBER=CUIT 33693450239</source>
+        <destination>SERIALNUMBER=CUIT 20230173932, CN=nehuenproject</destination>
+        <uniqueId>2724457254</uniqueId>
+        <generationTime>2020-01-31T09:50:20.531-03:00</generationTime>
+        <expirationTime>2020-01-31T21:50:20.531-03:00</expirationTime>
+    </header>
+    <credentials>
+        <token>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgc3JjPSJDTj13c2FhaG9tbywgTz1BRklQLCBDPUFSLCBTRVJJQUxOVU1CRVI9Q1VJVCAzMzY5MzQ1MDIzOSIgZHN0PSJDTj13c2ZlLCBPPUFGSVAsIEM9QVIiIHVuaXF1ZV9pZD0iMTk1ODQ5MzQxIiBnZW5fdGltZT0iMTU4MDQ3NDk2MCIgZXhwX3RpbWU9IjE1ODA1MTgyMjAiLz4KICAgIDxvcGVyYXRpb24gdHlwZT0ibG9naW4iIHZhbHVlPSJncmFudGVkIj4KICAgICAgICA8bG9naW4gZW50aXR5PSIzMzY5MzQ1MDIzOSIgc2VydmljZT0id3NmZSIgdWlkPSJTRVJJQUxOVU1CRVI9Q1VJVCAyMDIzMDE3MzkzMiwgQ049bmVodWVucHJvamVjdCIgYXV0aG1ldGhvZD0iY21zIiByZWdtZXRob2Q9IjIyIj4KICAgICAgICAgICAgPHJlbGF0aW9ucz4KICAgICAgICAgICAgICAgIDxyZWxhdGlvbiBrZXk9IjIwMjMwMTczOTMyIiByZWx0eXBlPSI0Ii8+CiAgICAgICAgICAgIDwvcmVsYXRpb25zPgogICAgICAgIDwvbG9naW4+CiAgICA8L29wZXJhdGlvbj4KPC9zc28+Cg==</token>
+        <sign>Iit+cuClB77sSq/vDOsJa7JA79VXiEqFItkEoYKrw6s3FbOW8PmsGRAtbKOCTrmj3ZvNWsmEZ/DmLfCT4oBtshPUy3N0YUr5pXu1qbJckqbOecrrNwQGmmYf4ohF2Pg/SG71fIW89v7bvNwnvpTBfg4VcGNquBtOYBnIHYBA8NA=</sign>
+    </credentials>
+</loginTicketResponse>
